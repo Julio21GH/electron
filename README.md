@@ -1,2 +1,5 @@
 # electron
-primeiro app
+function init(){
+  alert("AA");
+}
+init();
