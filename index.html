@@ -1,13 +1,25 @@
 <html>
   <script> 
 function init(){
-  alert("AA");
+fetch('teste.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: 'acao='
+
+    })
+    .then(response => response.text())
+    .then(data => {
+		     alert(data);
+    });
+
 }
   </script>
 <body onload="">
 <div id="bt1" onclick="init();">
-  clicar
+  Carregar PHP
 </div>
-  <input type="submit" value="JJ"/>
+  <input type="submit" value="AAA"/>
   </body>
 </html> 
