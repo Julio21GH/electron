@@ -1,11 +1,2 @@
 # electron
-<html>
-  <script> 
-function init(){
-  alert("AA");
-}
-  </script>
-<body onload="init();">
 
-  </body>
-</html> 
