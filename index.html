@@ -10,14 +10,14 @@ alert("ok");
 }
 	  
 function escolherPDF(){
-
+	alert(document.getElementById("arquivosPDF").value);
 }
   </script>
 <body onload="">
 <div id="bt1" onclick="comparar();">
   Testar IF
 </div>
-  <select value="AAA" onchange="escolherPDF();">
+  <select id="arquivosPDF" onchange="escolherPDF();">
 	<option id="pdf2" value="PDF2">PDF2</option>
 	<option id="pdf1" value="PDF1">PDF1</option>
   </select>
