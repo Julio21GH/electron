@@ -1,25 +1,25 @@
 <html>
   <script> 
-function init(){
-fetch('teste.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: 'acao='
-
-    })
-    .then(response => response.text())
-    .then(data => {
-		     alert(data);
-    });
+var var1_str = "A"; 
+var var2_str = "A";
+	  
+function comparar(){
+	if(var1_str == var2_str){
+alert("ok");
+	}
+}
+	  
+function escolherPDF(){
 
 }
   </script>
 <body onload="">
-<div id="bt1" onclick="init();">
-  Carregar PHP
+<div id="bt1" onclick="comparar();">
+  Testar IF
 </div>
-  <input type="submit" value="AAA"/>
+  <select value="AAA" onchange="escolherPDF();">
+	<option id="pdf2" value="PDF2">PDF2</option>
+	<option id="pdf1" value="PDF1">PDF1</option>
+  </select>
   </body>
 </html> 
